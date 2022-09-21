@@ -28,17 +28,18 @@ Waiting for some better docs, here is a list of the available helpers
 
 ### Big Query and JSONL files
 
-#### parseFromJsonL
+#### parseFromJsonL(jsonl)
 
 - This function parses a string (for instance from a .jsonl file) you'd want as an array of JS objects.
 - `@param {string} jsonl` the json (new line delimited) string you want to parse
 - `@returns {any[]}` An array of javascript objects
 
-#### parseToJsonL
+#### parseToJsonL(jsonl)
 
-- This function parses a string (for instance from a .jsonl file) you'd want as an array of JS objects.
-- `@param {string} jsonl` the json (new line delimited) string you want to parse
-- `@returns {any[]}` An array of javascript objects
+- Parses an array of objects and returns a [JSONL string](https://jsonlines.org/) as used in Big Query.
+- You can have nested objects in it but no arrays. See [limitations](https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-json).
+- `@param {Object[]} object` an array of object you want to parse to a jsonl string
+- `@returns {string}` returns a JSON (new line delimited) string.
 
 #### readFromJsonL
 
