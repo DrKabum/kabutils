@@ -1,0 +1,24 @@
+{
+  "name": "kabutils",
+  "version": "1.0.0",
+  "description": "A javascript library with my personal helpers",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrKabum/kabutils.git"
+  },
+  "keywords": [
+    "js",
+    "kabum"
+  ],
+  "author": "Nicolas 'Kabum' Broca",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DrKabum/kabutils/issues"
+  },
+  "homepage": "https://github.com/DrKabum/kabutils#readme"
+}
