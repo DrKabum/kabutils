@@ -37,7 +37,7 @@ export function parseFromJsonL(jsonl) {
 export function writeToJsonL(filepath, data) {
   const { dir } = parse(filepath)
 
-  if (!existsSync(dir)) mkdirSync(dir, { recursive: true })
+  if (dir && !existsSync(dir)) mkdirSync(dir, { recursive: true })
 
   writeFileSync(filepath, parseToJsonL(data))
 }
