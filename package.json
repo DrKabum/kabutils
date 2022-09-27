@@ -1,6 +1,6 @@
 {
   "name": "kabutils",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A javascript library with my personal helpers",
   "main": "index.js",
   "type": "module",
