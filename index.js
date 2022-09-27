@@ -75,3 +75,15 @@ export function byteSizeToReadable(bytes, si = false, dp = 1) {
 
   return bytes.toFixed(dp) + ' ' + units[u]
 }
+
+export function logWarning(string) {
+  console.log('\x1b[33m%s\x1b[0m', string)
+}
+
+export function logError(string) {
+  console.log('\x1b[31m%s\x1b[0m', string)
+}
+
+export function logInfo(string) {
+  console.log('\x1b[34m%s\x1b[0m', string)
+}
